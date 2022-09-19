@@ -93,7 +93,7 @@ section ul li {
 }
 
 section ul li:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 ul.games-list img {
@@ -110,7 +110,7 @@ ul.channel-list img {
 /* animation */
 
 header div {
-    animation: fromTop .7s .2s backwards; /* backwards puxa as propriedades do keyframes, pois há um atraso */
+    animation: fromTop 1s .2s backwards; /* backwards puxa as propriedades do keyframes, pois há um atraso */
 }
 
 main section {
@@ -118,7 +118,7 @@ main section {
 }
 
 main section:nth-child(1) {
-    animation-delay: 0;
+    animation-delay: .2s;
 }
 
 main section:nth-child(2) {
