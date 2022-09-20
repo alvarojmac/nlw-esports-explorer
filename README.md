@@ -18,7 +18,7 @@ Projeto construído no evento Next Level Week da Rocketseat.
 
 > Melhorias pessoais implementadas no projeto:
 - Criação da tag *\<abbr>* para descrição na foto de perfil e nomes de canais streamers
-- Aplicação do text-align: center na lista de games. (Evitando o erro no slide em que uma pequena parte da imagem do quarto elemento aparecia indevidamente)
+- Aplicação do *text-align: center* na lista de games. (Evitando o erro no slide em que uma pequena parte da imagem do quarto elemento aparecia indevidamente)
 
 
 ## 📡 Tecnologias
