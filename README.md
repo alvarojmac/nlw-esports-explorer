@@ -15,6 +15,7 @@ Projeto construído no evento Next Level Week da Rocketseat.
 > O que aprendi:
 - @keyframes
 - animation
+- biblioteca [Swiper](https://swiperjs.com)
 
 > Melhorias pessoais implementadas no projeto:
 - Criação da tag *\<abbr>* para descrição na foto de perfil e nomes de canais streamers
