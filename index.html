@@ -16,6 +16,11 @@
     <link rel="shortcut icon" href="./assets/gamepad-solid.svg" type="image/x-icon">
 
     <link rel="stylesheet" href="./style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
 </head>
 
 <body>
@@ -35,38 +40,57 @@
                 <h2>Meus jogos</h2>
                 <p>Os games que eu mais curto jogar!</p>
 
-                <ul class="games-list">
-                    <li>
-                        <a target="_blank" href="https://www.twitch.tv/directory/game/Red%20Dead%20Redemption%202">
-                            <img src="https://static-cdn.jtvnw.net/ttv-boxart/493959_IGDB-285x380.jpg" alt="Capa Red Dead Redemption 2">
-                        </a>
-                    </li>
+                <div class="swiper mySwiper">
 
-                    <li>
-                        <a target="_blank" href="https://www.twitch.tv/directory/game/Rocket%20League">
-                            <img src="https://static-cdn.jtvnw.net/ttv-boxart/30921-285x380.jpg" alt="Capa Rocket League">
-                        </a>
-                    </li>
+                    <ul class="games-list swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.twitch.tv/directory/game/Red%20Dead%20Redemption%202">
+                                <img src="https://static-cdn.jtvnw.net/ttv-boxart/493959_IGDB-285x380.jpg" alt="Capa Red Dead Redemption 2">
+                            </a>
+                        </li>
+    
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.twitch.tv/directory/game/Rocket%20League">
+                                <img src="https://static-cdn.jtvnw.net/ttv-boxart/30921-285x380.jpg" alt="Capa Rocket League">
+                            </a>
+                        </li>
+    
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.twitch.tv/directory/game/Pokémon%20Legends%3A%20Arceus">
+                                <img src="https://static-cdn.jtvnw.net/ttv-boxart/561013832_IGDB-285x380.jpg" alt="Capa Pokémon Legends Arceus">
+                            </a>
+                        </li>
 
-                    <li>
-                        <a target="_blank" href="https://www.twitch.tv/directory/game/Pokémon%20Legends%3A%20Arceus">
-                            <img src="https://static-cdn.jtvnw.net/ttv-boxart/561013832_IGDB-285x380.jpg" alt="Capa Pokémon Legends Arceus">
-                        </a>
-                    </li>
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.twitch.tv/directory/game/Grand%20Theft%20Auto%20V">
+                                <img src="https://static-cdn.jtvnw.net/ttv-boxart/32982_IGDB-188x250.jpg" alt="Capa Grand Theft Auto V">
+                            </a>
+                        </li>
+    
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.twitch.tv/directory/game/Sea%20of%20Thieves">
+                                <img src="https://static-cdn.jtvnw.net/ttv-boxart/490377-285x380.jpg" alt="Capa Sea of Thieves">
+                            </a>
+                        </li>
 
-                    <li>
-                        <a target="_blank" href="https://www.twitch.tv/directory/game/Sea%20of%20Thieves">
-                            <img src="https://static-cdn.jtvnw.net/ttv-boxart/490377-285x380.jpg" alt="Capa Sea of Thieves">
-                        </a>
-                    </li>
-                </ul>
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.twitch.tv/directory/game/The%20Forest">
+                                <img src="https://static-cdn.jtvnw.net/ttv-boxart/7022_IGDB-285x380.jpg" alt="Capa The Forest">
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                
             </div>
         </section>
 
         <section>
             <div>
                 <h2>Canais e streamers</h2>
-                <p>Lista de canais e transmissões que não perco!</p>
+                <p>Canais e transmissões que não perco!</p>
 
                 <ul class="channel-list">
                     <li>
@@ -171,6 +195,17 @@
         </section>
 
     </main>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        new Swiper(".mySwiper", {
+            slidesPerView: 3, /* número de slides visíveis por vez */
+            loop: true, /* loop infinito */
+        });
+    </script>
 
 </body>
 

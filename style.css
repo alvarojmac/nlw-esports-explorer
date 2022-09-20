@@ -47,7 +47,7 @@ header div:hover {
 }
 
 main {
-    max-width: 580px;
+    max-width: 360px; /* no projeto original era 580px */
     width: 90%;
     margin: 32px auto;
 
@@ -88,12 +88,18 @@ section ul {
     margin-top: 24px;
 }
 
-section ul li {
+ul.channel-list li,
+ul.social-list li {
     transition: transform .3s;
 }
 
-section ul li:hover {
+ul.channel-list li:hover,
+ul.social-list li:hover {
     transform: scale(1.2);
+}
+
+ul.games-list {
+    text-align: center;
 }
 
 ul.games-list img {
@@ -151,4 +157,18 @@ main section:nth-child(3) {
         opacity: 1;
         transform: translateY(0); /* termina. 0 = posição atual */
     }
+}
+
+/* Swiper */
+section {
+    overflow: hidden;
+}
+
+section ul.games-list, ul.channel-list {
+    flex-wrap: nowrap;
+    gap: 0;
+}
+
+section ul.channel-list {
+    justify-content: space-between;
 }
